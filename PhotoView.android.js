@@ -1,5 +1,5 @@
 import React, {Component, PropTypes} from 'react';
-import {requireNativeComponent, View} from 'react-native';
+import {requireNativeComponent, View, ViewPropTypes} from 'react-native';
 
 const resolveAssetSource = require('react-native/Libraries/Image/resolveAssetSource');
 
@@ -31,7 +31,7 @@ export default class PhotoView extends Component {
         onTap: PropTypes.func,
         onViewTap: PropTypes.func,
         onScale: PropTypes.func,
-        ...View.propTypes
+        ...ViewPropTypes
     };
 
     render() {
